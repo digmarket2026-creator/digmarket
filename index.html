@@ -414,7 +414,7 @@ nav.s .nav-links a:hover{color:var(--green);}
 .sponsor-row2{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
-  gap:2rem;
+  gap:1rem;
   align-items:stretch;
 }
 .sponsor-card-sm{
@@ -429,7 +429,7 @@ nav.s .nav-links a:hover{color:var(--green);}
   padding:0;
   border-bottom:none;
   background:transparent;
-  height:180px;
+  height:120px;
 }
 .card-head-logo-sm{
   width:100%;
@@ -437,6 +437,27 @@ nav.s .nav-links a:hover{color:var(--green);}
   object-fit:contain;
   object-position:center;
   display:block;
+}
+@media(max-width:760px){
+  .sponsor-row2{
+    grid-template-columns:1fr 1fr 1fr;
+    gap:.5rem;
+  }
+  .sponsor-card-sm .card-head{
+    height:70px;
+  }
+  .sponsor-card .card-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+    padding:1.4rem;
+  }
+  .sponsor-card .card-head-logo{
+    height:60px !important;
+  }
+  .stagger>.card{
+    margin-bottom:1.6rem;
+  }
 }
 
 
@@ -512,14 +533,32 @@ footer{background:#0d0c0a;padding:7rem 3rem 4rem;position:relative;overflow:hidd
   .hero-content{grid-template-columns:1fr;padding:0 1.8rem 5.5rem;}
   .hero-facts{display:none;}
   .hero-scroll{left:1.8rem;bottom:6.5rem;}
-  .sec-in{padding:5rem 1.5rem;}
-  .strip{grid-template-columns:90px 1fr;}
-  .map-wrap iframe{height:260px;}
-  .parking-map-wrap iframe{height:280px;}
+  .hero-h1{font-size:clamp(56px,18vw,120px);}
+  .sec-in{padding:4rem 1.2rem;}
+  .sec-h2{font-size:clamp(2rem,8vw,3rem);margin-bottom:2.4rem;}
+  .strip{grid-template-columns:80px 1fr;}
+  .strip-k{padding:1rem 1rem;font-size:.5rem;}
+  .strip-v{padding:1rem 1.2rem;font-size:.84rem;}
+  .map-wrap iframe{height:240px;}
+  .parking-map-wrap iframe{height:240px;}
   .parking-list{grid-template-columns:1fr;}
-  footer{padding:5rem 1.5rem 3rem;}
-  .sponsor-card .card-head{padding:2rem;}
-  .sponsor-card .card-head-logo{height:56px;}
+  .parking-notice ul li{font-size:.82rem;}
+  .callout{padding:1.2rem 1.4rem;font-size:.82rem;}
+  footer{padding:4rem 1.2rem 3rem;}
+  .footer-h2{font-size:clamp(1.8rem,7vw,2.8rem);}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:.6rem;}
+  .footer-copy{font-size:.72rem;}
+  .sponsor-card .card-head{padding:1.6rem;}
+  .sponsor-card .card-head-logo{height:72px;}
+  .sponsor-card .card-head-title{font-size:1rem;}
+  .sponsor-row2{grid-template-columns:1fr 1fr;gap:.6rem;}
+  .cta-box{padding:3.5rem 1.8rem;}
+  .cta-h{font-size:2rem;}
+  .cta-btn{padding:.9rem 2.4rem;font-size:.62rem;}
+  .card-head{gap:1.2rem;}
+  .card-head-icon{width:44px;height:44px;}
+  .card-head-icon svg{width:32px;height:32px;}
+  .card-head-title{font-size:.95rem;}
 }
 </style>
 </head>
